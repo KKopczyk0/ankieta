@@ -1,11 +1,11 @@
 <HTML>
 <HEAD>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
-<TITLE>Wyniki głosowania</TITLE>
+<TITLE>Wyniki ankiety</TITLE>
 </HEAD>
 <BODY>
 <CENTER>
-<H2>Wyniki glosowania</H2>
+<H2>Wyniki ankiety</H2>
 <?PHP
 
 function printResults()
@@ -24,7 +24,7 @@ function printResults()
     $link = mysql_connect("localhost", "login", "haslo");
     $flag = mysql_select_db("nazwa_bazy");
     if(!$link || !$flag){
-      echo("Problem z połšczeniem z bazš danych.");
+      echo("Problem z połšczeniem z baza danych.");
       return false;
     }
 
